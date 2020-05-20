@@ -1,20 +1,16 @@
 # Define display_board that accepts a board and prints
 # out the current state.
-row = [" ", " ", " "]
-
-output = capture_puts{ display_board(board) }
-rows = output.split("\n")
-
-
-row[0]
-
-
-row[1]
-
-
-row[2]
-
-# Move X to the Position 2, Middle
-row[1] = "X"
-row #=> [" ", "X", " "]
+def display_board(board)
+ puts "#{"board"}"
 end
+
+ board = [" "," "," "," "," "," "," "," "," "]
+
+  output = capture_puts{ display_board(board) }
+  rows = output.split("\n")
+
+  rows[0]
+  rows[1]
+  rows[2]
+  rows[3]
+  rows[4]
